@@ -1,0 +1,89 @@
+html {
+    background-color: #e4e9fd;
+    background-image: -webkit-linear-gradient(70deg, #67E6DC 50%, #FFDD59 50%);
+
+    min-height: 100vh;
+}
+
+.box {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.item {
+    margin-bottom: -20px;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+
+}
+
+.item p {
+    margin-left: 30px;
+}
+
+.item:last-child {
+    border-bottom: 0;
+}
+
+h1 {
+    color: black;
+    padding: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 15px;
+    margin-left: 30px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+}
+
+input[type="text"]:hover {
+    border-bottom: 1px solid red;
+    border: none;
+    outline: none;
+}
+
+button {
+    padding: 1px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 25px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: purple;
+}
+
+.taskCheckbox:checked+p {
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 600px) {
+    input[type="text"] {
+        margin-top: 5px;
+        width: 200px;
+    }
+}

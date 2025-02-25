@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script>
+        // Function to handle deletion when checkbox is clicked
+        function deleteTask(index) {
+            fetch(`/delete/${index}`, { method: 'DELETE' })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // Reload the page or update the DOM to reflect deletion
+                        window.location.reload();
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <h1>To-Do App 🚀</h1>
+    </div>
+
+    <div class="box">
+        <% for(var i = 0; i < ejes.length; i++) { %>
+            <div class="item">
+                <input type="checkbox" class="taskCheckbox" onclick="deleteTask(<%= i %>)">
+                📌  <p><%= ejes [i] %></p>
+            </div>
+        <% } %>
+        
+        <form action="/" method="POST">
+            <input type="text" name="ele1" placeholder="Enter task...">
+            <button type="submit">+</button>
+        </form>
+    </div>
+</body>
+
+</html>

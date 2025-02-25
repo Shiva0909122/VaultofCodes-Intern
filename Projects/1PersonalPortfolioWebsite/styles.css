@@ -1,0 +1,165 @@
+body {
+    font-family: "Inter";
+    margin: 10px;
+    padding: 10px;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-info {
+    font-size: 16px;
+}
+
+.section {
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+
+.section2 {
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+
+.awards {
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+
+.hobbies {
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.section2-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.award-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hobbies-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.experience {
+    margin-top: 10px;
+}
+
+.project {
+    margin-top: 10px;
+}
+
+.experience-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 14px;
+    font-style: italic;
+}
+
+body {
+    cursor: pointer;
+    /* color: rgb(172, 102, 102); */
+    border: 2px solid red;
+
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.box {
+    border: 1px dashed grey;
+
+}
+
+/* Default anchor tag styling */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+
+/* Styling for normal (unvisited) links */
+.home {
+    color: #007bff;
+    /* Change the link text color */
+    text-decoration: none;
+    /* Remove underlines from links */
+    background-color: aliceblue;
+    /* Add a gray background on mouse-over */
+    border: 2px solid red;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Styling for visited links */
+a:visited {
+    color: purple;
+    /* Change the color of visited links */
+}
+
+/* Styling for hovered links */
+a:hover {
+    text-decoration: underline;
+    /* Add underline when the link is hovered */
+}
+
+/* Styling for active (clicked) links */
+a:active {
+    color: #ff0000;
+    /* Change the color of active links (when clicked) */
+}
+
+u,
+li {
+    font-weight: bold;
+}
+
+/* Media query for screens narrower than 600px */
+@media (max-width: 1000px) {
+    a {
+        color: red;
+        font-size: 16px;
+
+    }
+}

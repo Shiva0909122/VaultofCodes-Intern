@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <div class="container">
+        <h2>User Registration</h2>
+        <form id="registrationForm">
+            <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <div class="d-flex gap-2">
+                    <input type="text" class="form-control" placeholder="First Name" id="firstName" required>
+                    <input type="text" class="form-control" placeholder="Last Name" id="lastName" required>
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+                <small class="password-strength" id="passwordStrength">Password Strength: </small>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" required>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" required>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <select class="form-control" id="gender" required>
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">Profile Picture</label>
+                <input type="file" class="form-control" accept="image/*" id="profilePic">
+            </div>
+            
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="terms" required>
+                <label class="form-check-label">I agree to the Terms and Conditions</label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary w-100">Register</button>
+        </form>
+        <footer>
+            <p id="foot">&copy; VaultofCodes . All rights reserved by
+                <a href="https://www.linkedin.com/in/shivarth-dronachary/" target="_blank">
+                    Shivarth <span><img src="../Assets/linkedin-original.256x256.png" alt="" height="16px"></span>
+                </a>
+                <a href="https://github.com/Shiva0909122" target="_blank">
+                    Shiva0909122 <span><img src="../Assets/github-square.svg" alt="" height="16px"></span>
+                </a>
+            </p>
+
+        </footer>
+    </div>
+    <script defer src="script.js"></script>
+   
+</body>
+</html>

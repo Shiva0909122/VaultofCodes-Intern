@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Builder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container my-5">
+        <h2 class="text-center">Interactive Resume Builder</h2>
+
+        <div class="row">
+            <!-- Form Section -->
+            <div class="col-md-6">
+                <form id="resumeForm">
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Profile Summary</label>
+                        <textarea class="form-control" id="summary" rows="3"></textarea>
+                    </div>
+
+                    <div id="educationFields">
+                        <h5>Education</h5>
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control" placeholder="Degree & Institution" name="education">
+                            <input type="text" class="form-control" placeholder="Branch" name="branch">
+                            <input type="text" class="form-control" placeholder="Year of Passing" name="year">
+                            <button class="btn btn-primary add-education">+</button>
+                        </div>
+                    </div>
+
+
+                    <div id="experienceFields">
+                        <h5>Experience</h5>
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control" placeholder="Job Title & Company" name="experience">
+                            <button class="btn btn-primary add-experience">+</button>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Skills</label>
+                        <input type="text" class="form-control" id="skills"
+                            placeholder="Enter skills (comma-separated)">
+                    </div>
+
+                    <button type="button" class="btn btn-success" id="generateResume">Generate Resume</button>
+                    <button type="reset" class="btn btn-danger" id="clearForm">Clear</button>
+                </form>
+            </div>
+
+            <!-- Resume Preview Section -->
+            <div class="col-md-6">
+                <div class="resume-preview p-4" id="resumePreview">
+                    <h3 id="previewName">Your Name</h3>
+                    <p id="previewEmail">Email: example@example.com</p>
+                    <p id="previewPhone">Phone: 1234567890</p>
+                    <p id="previewSummary">Profile Summary: Brief about yourself</p>
+                    <h5>Education</h5>
+                    <ul id="previewEducation"></ul>
+
+                    <h5>Experience</h5>
+                    <ul id="previewExperience"></ul>
+                    <h5>Skills</h5>
+                    <p id="previewSkills">Skillset will appear here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+    </body>
+
+</html>
